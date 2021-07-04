@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上預約</title>
+     <!-- broostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- aso -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- VenoBox -->
+  <link rel="stylesheet" href="./venobox/venobox.css" type="text/css" media="screen" />
+</head>
+<body>
+          <!-- main-home -->
+          <section id="main-home">
+            <header>
+              <div class="container-fluid">
+                
+                <nav class="navbar navbar-expand-lg navbar-light  p-0 ">
+                  <a class="navbar-brand" href="./index.html">與時</a>
+                  <button class="navbar-toggler sbtn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="./about.html">關於與時</a>
+                      </li>
+                    
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          實境遊戲
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./game2.html">密室逃脫</a>
+                          <a class="dropdown-item" href="./game1.html">劇本殺</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./book.html">線上預約</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./login.html">會員專區</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </header>
+              </section>
+      <section>
+          <div ><img src="./image/book.jpg" alt="" class="bannerimg"></div>
+      </section>
+      <!-- form -->
+    <section class="form-wrapper container">
+        <div class="row booking-group">
+        <div class="form-list col-6 ">
+            <form action="">
+                <div class="inpbox full">
+                    <span class="flaticon-act">預約活動</span>
+                    <select name="" id="active">
+                        <option value="">希望之村</option>
+                        <option value="">神界</option>
+                        <option value="">天空之城</option>
+                        <option value="">迴程</option>
+                    </select>
+    
+                </div> 
+                <div class="inpbox full">
+                    <span class="flaticon-people">預約場次</span>
+                    <select name="" id="active">
+                        <option value="">10:00-12:00</option>
+                        <option value="">13:00-15:00</option>
+                        <option value="">15:00-17:00</option>
+                        <option value="">17:00-19:00</option>
+                    </select>
+    
+                </div> 
+                <div class="inpbox">
+                    <span class="flaticon-calender">預約日期</span>
+                    <input type="date" placeholder="pickup location">
+                </div>
+                <div class="inpbox">
+                    <span class="flaticon-globe">預約姓名</span>
+                    <input type="text" placeholder="王小明">
+                </div>
+                <div class="inpbox">
+                    <span class="flaticon-globe">聯絡電話</span>
+                    <input type="text" placeholder="04-123321123">
+                </div>
+                <div class="inpbox">
+                    <span class="flaticon-globe">電子信箱</span>
+                    <input type="mail" placeholder="123@mail.com">
+                </div>
+                <div>
+                    <label class="commentlineheight"for="comments">備註</span> </label><br>
+                <textarea name="comments" id="comments" cols="45" rows="3"
+              ></textarea>
+                </div>
+                <button class="btn btn-light">送出</button>
+            </form>
+        </div>
+        <div class="col-6 low-list">
+            <p>注意事項<br>
+                ※預約前一天及當天場次請直接來電！
+                <br>
+                ✔費用以場次計算，密室逃脫2200元劇本殺1800元
+
+<br>
+                ✔ 預約以場次為單位，只需先支付包場訂金1000元
+         <br>       
+                ✔ 當日遊玩人數可以變動，活動當天再付追加人數的差額即可
+              <br>  
+                ✔ 遊玩人數：6人以上，建議 8 ~ 10 人，低於建議人數難度較高，不足6人將導致遊戲無法進行
+                *未能成團不退訂金</p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div>
+       <p>地址：台中市南屯區有一條路123號 聯絡電話：04-123321123 <br> Copyright © 僅供學習用</p>
+     
+    
+        </div>
+      </footer>
+
+
+
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="./venobox/venobox.min.js"></script>
+ <script src="./js/script.js"></script>
+</body>
+</html>

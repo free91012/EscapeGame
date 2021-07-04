@@ -1,0 +1,414 @@
+/*========== base==========*/
+*,::before,::after{
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    
+    position: relative;
+    padding: 0;
+
+      
+  }
+/* ======navbar====== */
+#main-home .navbar .nav-item{
+padding: 0 15px;
+}
+#main-home .navbar .navbar-brand,
+#main-home .navbar .nav-item .nav-link,
+#main-home .navbar .nav-item .dropdown-menu .dropdown-item,
+.sbtn{
+   color: #9B6E23;
+}
+ #main-home .navbar .nav-item .nav-link:hover,
+ #main-home .navbar .nav-item .dropdown-menu .dropdown-item:hover{
+ color: #734338;
+ }
+ 
+ /* =====responsive style===== */
+ @media only screen and (max-width:990px){
+.nav-item{
+  margin: auto;
+  
+
+}
+.booking-group{
+  display: inline-block
+}
+     
+ }
+ @media only screen and (min-width:990px){
+  .content{
+    position: relative;
+    top: 100px;
+    
+  }
+  .active-pic{
+width: 280px;
+height: 200px;
+  }
+
+
+}
+
+/*--------------------------------------------------------------
+index
+--------------------------------------------------------------*/
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../image/bg2.jpg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  padding-top: 110px;
+}
+.hero-title{
+  color: #9B6E23;
+}
+#hero h1,#hero h2{
+  color: #FCFAF2;
+}
+
+/*--------------------------------------------------------------
+about
+--------------------------------------------------------------*/
+
+
+.about .about-img {
+  position: relative;
+  transition: .5s;
+  padding: auto;
+}
+
+.about .about-img img {
+  max-width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.about .about-img::before {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  content: '';
+  border-left: 5px solid #cda45e;
+  border-top: 5px solid #cda45e;
+  transition: .5s;
+}
+.about p{
+  color: #FCFAF2;
+}
+
+.about .about-img::after {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  content: '';
+  border-right: 5px solid #cda45e;
+  border-bottom: 5px solid #cda45e;
+  transition: .5s;
+}
+
+.about .about-img:hover {
+  transform: scale(1.03);
+}
+
+.about .about-img:hover::before {
+  left: 10px;
+  top: 10px;
+}
+
+.about .about-img:hover::after {
+  right: 10px;
+  bottom: 10px;
+}
+.about{
+margin-top: 100px;
+color: #734338;
+
+}
+.gallery{
+  color: #734338;
+  margin-top: 100px;
+}
+
+.active-pic{
+  filter:blur(2px);
+  /* width: 280px;
+  height: 180px; */
+}
+.active-pic:hover{
+  filter:blur(0px);
+}
+
+
+/*--------------------------------------------------------------
+game
+--------------------------------------------------------------*/
+
+
+
+/* games */
+.bannerimg{
+  width: 100%;
+  height: 500px;
+}
+.bannerimg image{
+  width: 100%;
+  height: 100%;
+ object-fit: contain;
+} 
+
+.game-title{
+  position: absolute;
+  color: #FCFAF2;
+
+  font-size: 40px;
+  top: 30%;
+  left:45% ;
+  z-index: 99;
+ 
+}
+
+
+.card-container{
+  width: 360px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+.cover,.back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .25s ease-in-out;
+  border-radius: .4rem;
+  box-shadow: 0 .2rem 5rem rgba(0,0,0,.18);
+}
+.cover{
+  background-color: aqua;
+  transform: rotateY(0deg);
+  text-align: center;
+  line-height:300px;
+  color: #FCFAF2;
+ 
+}
+.back{
+  background-color:  rgba(0, 0, 0, 0.8);
+  transform: rotateY(-180deg);
+  color: #FCFAF2;
+  padding: 20px;
+  margin: 0 auto;
+}
+.card-container:hover .cover{
+  transform: rotateY(180deg);
+}
+.card-container:hover .back{
+  transform: rotateY(0deg);
+}
+.game1{
+  background-image: url(../image/game-list1.jpg);
+}
+.game2{
+  background-image: url(../image/game-list2.jpg);
+}
+.game3{
+  background-image: url(../image/game-list3.jpg);
+}
+.game4{
+  background-image: url(../image/game-list4.jpg);
+}
+.escape1{
+  background-image: url(../image/escape1.jpg);
+  background-size: cover;
+}
+.escape2{
+  background-image: url(../image/escape2.jpg);
+  background-size: cover;
+}
+.escape3{
+  background-image: url(../image/escape3.png);
+  background-size: cover;
+}
+.escape4{
+  background-image: url(../image/escape5.jpg);
+  background-size: cover;
+}
+.escape5{
+  background-image: url(../image/escape6.jpg);
+  background-size: cover;
+  
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #734338;
+  text-align: center;
+  margin-top: 60px;
+  position: absolute;
+width: 100%;
+ 
+  
+
+
+}
+.intruduce{
+  margin-top: 100px;
+}
+.intruduce>p{
+  text-shadow: 0.1em 0.1em #333;
+}
+ 
+
+/*--------------------------------------------------------------
+booking
+--------------------------------------------------------------*/
+
+.low-list{
+  line-height: 46px;
+}
+.form-wrapper {
+ margin-top: 100px;
+}
+.inpbox {
+  margin-top: 10px;
+}
+
+/*--------------------------------------------------------------
+login
+--------------------------------------------------------------*/
+
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image:url(../image/bg2.jpg);
+  background-position: cover;
+  background-size: cover;
+  position: absolute;
+  
+}
+.form-box{
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+  top: 100px;
+}
+.button-box{
+  width: 220px;
+  margin: 35px auto; 
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right,#ff105f,#ffad06);
+  border-radius: 30px;
+  transition: .5s;
+}
+.social-icons{
+  margin: 30px auto;
+  text-align: center;
+}
+.social-icons i{
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.input-group{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-foeld{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn{
+width: 85%;
+padding: 10px 30px;
+cursor: pointer;
+display: block;
+margin: auto;
+background: linear-gradient(to right,#ff105f,#ffad06);
+border: 0;
+outline: none;
+border-radius: 30px;
+}
+.check-box{
+  margin: 30x 10px 30px 0;
+}
+.check-box span{
+  color: #777;
+  font-size: 10px;
+  bottom: 68px;
+  
+
+}
+#login{
+left: 50px;
+}
+#register{
+left: 450px;
+}
+
+
+
+
+
+
+
+
